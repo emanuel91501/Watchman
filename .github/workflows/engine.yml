@@ -28,13 +28,20 @@ jobs:
       COURTLISTENER_TOKEN: ${{ secrets.COURTLISTENER_TOKEN }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Keys present?
+        id: k
+        run: |
+          if [ -n "$FRED_API_KEY" ]; then echo "ok=1" >> "$GITHUB_OUTPUT"; else echo "No keys yet - add them under Settings, Secrets and variables, Actions. Skipping this run."; fi
+      - if: steps.k.outputs.ok == '1'
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: pip
           cache-dependency-path: engine/requirements.txt
-      - run: pip install -r engine/requirements.txt
-      - name: Pick mode
+      - if: steps.k.outputs.ok == '1'
+        run: pip install -r engine/requirements.txt
+      - if: steps.k.outputs.ok == '1'
+        name: Pick mode
         id: m
         run: |
           M="${{ github.event.inputs.mode }}"
@@ -42,16 +49,20 @@ jobs:
             if [ $((10#$(date -u +%H) % 3)) = 1 ]; then M=morning; else M=hourly; fi
           fi
           echo "mode=$M" >> "$GITHUB_OUTPUT"
-      - name: Run engine
+      - if: steps.k.outputs.ok == '1'
+        name: Run engine
         working-directory: engine
         run: python3 engine.py --mode ${{ steps.m.outputs.mode }} --out out/${{ steps.m.outputs.mode }} --state ../state
-      - name: Test
+      - if: steps.k.outputs.ok == '1'
+        name: Test
         working-directory: engine
         continue-on-error: true
         run: python3 test_engine.py --out out/${{ steps.m.outputs.mode }}
-      - name: Export to the site
+      - if: steps.k.outputs.ok == '1'
+        name: Export to the site
         run: python3 tools/export.py --out engine/out/${{ steps.m.outputs.mode }}
-      - name: Save data
+      - if: steps.k.outputs.ok == '1'
+        name: Save data
         run: |
           git config user.name "watchman-engine"
           git config user.email "watchman-engine@users.noreply.github.com"
@@ -59,11 +70,14 @@ jobs:
           git commit -m "data: ${{ steps.m.outputs.mode }} run $(date -u +%Y-%m-%dT%H:%MZ)" || echo "no change"
           git pull --rebase -X ours origin main || true
           git push
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - if: steps.k.outputs.ok == '1'
+        uses: actions/configure-pages@v5
+      - if: steps.k.outputs.ok == '1'
+        uses: actions/upload-pages-artifact@v3
         with:
           path: site
-      - id: deploy
+      - if: steps.k.outputs.ok == '1'
+        id: deploy
         uses: actions/deploy-pages@v4
     environment:
       name: github-pages
