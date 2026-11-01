@@ -1,0 +1,51 @@
+World|UN News|https://news.un.org/feed/subscribe/en/news/all/rss.xml
+World|WHO news|https://www.who.int/rss-feeds/news-english.xml
+World|GDACS disasters|https://www.gdacs.org/xml/rss.xml
+World|World Bank API|https://api.worldbank.org/v2/country/US/indicator/NY.GDP.MKTP.CD?format=json&per_page=1
+World|IMF SDMX|https://dataservices.imf.org/REST/SDMX_JSON.svc/Dataflow
+World|OECD SDMX|https://sdmx.oecd.org/public/rest/dataflow/all?format=sdmx-json
+World|Our World in Data|https://ourworldindata.org/grapher/population.csv?csvType=filtered&country=~USA
+World|GDELT doc|https://api.gdeltproject.org/api/v2/doc/doc?query=election&mode=artlist&maxrecords=3&format=json
+World|Wikipedia current events|https://en.wikipedia.org/api/rest_v1/feed/featured/2026/10/30
+World|Wikidata SPARQL|https://query.wikidata.org/sparql?query=SELECT%20%3Fx%20WHERE%20%7B%20%3Fx%20wdt%3AP31%20wd%3AQ6256%20%7D%20LIMIT%201&format=json
+Europe|BBC Europe|https://feeds.bbci.co.uk/news/world/europe/rss.xml
+Europe|France24 EN|https://www.france24.com/en/rss
+Europe|Euronews|https://www.euronews.com/rss
+Europe|ECB data|https://data-api.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?lastNObservations=1&format=jsondata
+Asia|NHK World|https://www3.nhk.or.jp/nhkworld/en/news/feeds/
+Asia|SCMP|https://www.scmp.com/rss/91/feed
+Asia|The Hindu|https://www.thehindu.com/news/international/feeder/default.rss
+Asia|CNA Singapore|https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml
+Asia|Kyodo|https://english.kyodonews.net/rss/news.xml
+MidEast|Times of Israel|https://www.timesofisrael.com/feed/
+MidEast|Al-Monitor|https://www.al-monitor.com/rss
+Africa|AllAfrica|https://allafrica.com/tools/headlines/rdf/latest/headlines.rdf
+Africa|BBC Africa|https://feeds.bbci.co.uk/news/world/africa/rss.xml
+LatAm|BBC LatAm|https://feeds.bbci.co.uk/news/world/latin_america/rss.xml
+LatAm|MercoPress|https://en.mercopress.com/rss
+Americas|CBC|https://www.cbc.ca/webfeed/rss/rss-world
+US|NYT top (headlines)|https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
+US|WSJ world|https://feeds.a.dj.com/rss/RSSWorldNews.xml
+US|Politico|https://rss.politico.com/politics-news.xml
+US|The Hill|https://thehill.com/news/feed/
+US|Axios|https://api.axios.com/feed/
+US|C-SPAN|https://www.c-span.org/rss/?type=video
+States|Stateline (Pew)|https://stateline.org/feed/
+States|States Newsroom network|https://statesnewsroom.com/feed/
+States|Open States bills all states|https://v3.openstates.org/bills?jurisdiction=ca&sort=updated_desc&per_page=1
+States|NWS all US alerts|https://api.weather.gov/alerts/active?severity=Extreme,Severe
+States|FEMA declarations|https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries?$top=1&$orderby=declarationDate%20desc
+States|CDC data|https://data.cdc.gov/api/views/metadata/v1?limit=1
+States|Census API|https://api.census.gov/data/2023/acs/acs1?get=NAME,B01001_001E&for=state:18
+Markets|Stooq S&P CSV|https://stooq.com/q/l/?s=^spx&f=sd2t2ohlcv&h&e=csv
+Markets|Treasury yields|https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv
+Markets|CoinGecko|https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd
+Markets|SEC EDGAR|https://efts.sec.gov/LATEST/search-index?q=%228-K%22&forms=8-K
+Markets|SEC EDGAR submissions|https://data.sec.gov/submissions/CIK0000320193.json
+Science|NASA EONET events|https://eonet.gsfc.nasa.gov/api/v3/events?limit=1
+Science|NOAA SWPC space weather|https://services.swpc.noaa.gov/products/alerts.json
+Security|CISA KEV|https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+Security|State Dept travel advisories|https://travel.state.gov/_res/rss/TAsTWs.xml
+Elections|IFES ElectionGuide|https://www.electionguide.org/feed/elections/upcoming/
+Elections|Polymarket|https://gamma-api.polymarket.com/markets?limit=1&closed=false
+Elections|Metaculus|https://www.metaculus.com/api/posts/?limit=1

@@ -1,0 +1,6 @@
+{
+ "Three branches": [{"url": "https://www.usa.gov/branches-of-government", "re": "divides the federal government into three branches"}],
+ "Federalism": [{"url": "https://www.archives.gov/founding-docs/bill-of-rights-transcript", "re": "powers not delegated to the United States"}],
+ "GDP, jobs, CPI": [{"url": "https://www.bea.gov/data/gdp/gross-domestic-product", "re": "Real gross domestic product \\(GDP\\) increased .* advance estimate"}],
+ "Ballot questions and retention": [{"url": "https://www.in.gov/courts/about/", "re": "merit selection and retention"}]
+}

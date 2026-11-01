@@ -1,0 +1,130 @@
+{
+ "known_bad/r30-goes-colorado.jpg": {
+  "img_id": "img-goes-crop-alertc3741d9ac555-20261031t23",
+  "why": "Rejected by Fable r30 (FABLE-r30 #5, FABLE-ATTACK-r31 #8): Pictures lead 'sharpest first', brown blur, plate_score 95.9, nothing identifiable.",
+  "source": "app/dev/fixtures/C1.json img/index + blobs.json (r23 live-db snapshot, 2026-10-31)",
+  "row": {
+   "id": "img-goes-crop-alertc3741d9ac555-20261031t23",
+   "crop": "event",
+   "credit": "NOAA GOES ABI GeoColor (GOES-East (GOES-19)) via NASA EOSDIS GIBS",
+   "license": "Public domain (US government work, NOAA and NASA)",
+   "src_url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=GOES-East_ABI_GeoColor&CRS=EPSG:4326&BBOX=36.764,-107.373,38.603,-105.050&WIDTH=640&HEIGHT=640&FORMAT=image/jpeg",
+   "taken": "2026-10-31",
+   "width": 640,
+   "height": 640,
+   "caption": "Latest GOES-East (GOES-19) GeoColor satellite view cropped to the event: Flood Watch \u2014 Del Norte Vicinity/Northern San Luis Valley Below 8500 Ft and 4 more areas. The box runs 36.8 N to 38.6 N, 107.4 W to 105.0 W (alert area plus 25% padding). Taken 2026-10-31."
+  }
+ },
+ "known_bad/goes-san-juan-upscaled.jpg": {
+  "img_id": "img-goes-crop-alert05e728c0afdb-20261031t23",
+  "why": "Same r30 defect class (FABLE-ATTACK-r31 #8): GOES 2 km tile up-scaled ~10x over the San Juan Mountains; plate_score gave it 100.",
+  "source": "app/dev/fixtures/C1.json img/index + blobs.json (r23 live-db snapshot, 2026-10-31)",
+  "row": {
+   "id": "img-goes-crop-alert05e728c0afdb-20261031t23",
+   "crop": "event",
+   "credit": "NOAA GOES ABI GeoColor (GOES-East (GOES-19)) via NASA EOSDIS GIBS",
+   "license": "Public domain (US government work, NOAA and NASA)",
+   "src_url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=GOES-East_ABI_GeoColor&CRS=EPSG:4326&BBOX=36.797,-107.451,37.997,-105.941&WIDTH=640&HEIGHT=640&FORMAT=image/jpeg",
+   "taken": "2026-10-31",
+   "width": 640,
+   "height": 640,
+   "caption": "Latest GOES-East (GOES-19) GeoColor satellite view cropped to the event: Winter Storm Warning \u2014 Eastern San Juan Mountains Above 10000 Ft. The box runs 36.8 N to 38.0 N, 107.5 W to 105.9 W (alert area plus 25% padding). Taken 2026-10-31."
+  }
+ },
+ "known_bad/goes-ruby-mtns-cloud-deck.jpg": {
+  "img_id": "img-goes-crop-alert70b50a83f0c2-20261031t23",
+  "why": "Flat cloud deck, no ground (plate_score flagged it grey/flat).",
+  "source": "app/dev/fixtures/C1.json img/index + blobs.json (r23 live-db snapshot, 2026-10-31)",
+  "row": {
+   "id": "img-goes-crop-alert70b50a83f0c2-20261031t23",
+   "crop": "event",
+   "credit": "NOAA GOES ABI GeoColor (GOES-East (GOES-19)) via NASA EOSDIS GIBS",
+   "license": "Public domain (US government work, NOAA and NASA)",
+   "src_url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=GOES-East_ABI_GeoColor&CRS=EPSG:4326&BBOX=39.875,-116.234,41.228,-114.453&WIDTH=640&HEIGHT=640&FORMAT=image/jpeg",
+   "taken": "2026-10-31",
+   "width": 640,
+   "height": 640,
+   "caption": "Latest GOES-East (GOES-19) GeoColor satellite view cropped to the event: Winter Storm Warning \u2014 Ruby Mountains and East Humboldt Range. The box runs 39.9 N to 41.2 N, 116.2 W to 114.5 W (alert area plus 25% padding). Taken 2026-10-31."
+  }
+ },
+ "known_bad/goes-florida-grey-blur.jpg": {
+  "img_id": "img-goes-crop-alert3bad48de3a85-20261031t23",
+  "why": "Up-scaled grey GOES crop of a Florida flood warning; unidentifiable.",
+  "source": "app/dev/fixtures/C1.json img/index + blobs.json (r23 live-db snapshot, 2026-10-31)",
+  "row": {
+   "id": "img-goes-crop-alert3bad48de3a85-20261031t23",
+   "crop": "event",
+   "credit": "NOAA GOES ABI GeoColor (GOES-East (GOES-19)) via NASA EOSDIS GIBS",
+   "license": "Public domain (US government work, NOAA and NASA)",
+   "src_url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=GOES-East_ABI_GeoColor&CRS=EPSG:4326&BBOX=28.615,-82.242,29.815,-80.868&WIDTH=640&HEIGHT=640&FORMAT=image/jpeg",
+   "taken": "2026-10-31",
+   "width": 640,
+   "height": 640,
+   "caption": "Latest GOES-East (GOES-19) GeoColor satellite view cropped to the event: Flood Warning \u2014 Lake, FL, Volusia, FL. The box runs 28.6 N to 29.8 N, 82.2 W to 80.9 W (alert area plus 25% padding). Taken 2026-10-31."
+  }
+ },
+ "known_good/goes-hurricane-vance.jpg": {
+  "img_id": "img-goes-crop-storm2fc685764296-20261031t23",
+  "why": "Hurricane Vance with the Baja/Mexico coastline: event and place both readable.",
+  "source": "app/dev/fixtures/C1.json img/index + blobs.json (r23 live-db snapshot, 2026-10-31)",
+  "row": {
+   "id": "img-goes-crop-storm2fc685764296-20261031t23",
+   "crop": "event",
+   "credit": "NOAA GOES ABI GeoColor (GOES-East (GOES-19)) via NASA EOSDIS GIBS",
+   "license": "Public domain (US government work, NOAA and NASA)",
+   "src_url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=GOES-East_ABI_GeoColor&CRS=EPSG:4326&BBOX=17.195,-113.655,28.005,-101.945&WIDTH=640&HEIGHT=640&FORMAT=image/jpeg",
+   "taken": "2026-10-31",
+   "width": 640,
+   "height": 640,
+   "caption": "Latest GOES-East (GOES-19) GeoColor satellite view cropped to the event: Hurricane Vance. The box runs 17.2 N to 28.0 N, 113.7 W to 101.9 W (storm centre plus or minus 600 km). Taken 2026-10-31."
+  }
+ },
+ "known_good/modis-typhoon-in-fa.jpg": {
+  "img_id": "img-modis-crop-stormd8f2f587c1a9-2026-10-31",
+  "why": "Super Typhoon In-fa, eye and spiral bands at MODIS 250 m.",
+  "source": "app/dev/fixtures/C1.json img/index + blobs.json (r23 live-db snapshot, 2026-10-31)",
+  "row": {
+   "id": "img-modis-crop-stormd8f2f587c1a9-2026-10-31",
+   "crop": "event",
+   "credit": "NASA EOSDIS Global Imagery Browse Services (GIBS), MODIS Terra true colour, 2026-10-31",
+   "license": "NASA open data; public domain per NASA media usage guidelines",
+   "src_url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetMap&VERSION=1.3.0&LAYERS=MODIS_Terra_CorrectedReflectance_TrueColor&CRS=EPSG:4326&BBOX=17.495,138.132,28.305,149.868&WIDTH=640&HEIGHT=640&FORMAT=image/jpeg&TIME=2026-10-31",
+   "taken": "2026-10-31",
+   "width": 640,
+   "height": 640,
+   "caption": "NASA MODIS Terra true-colour view cropped to the event: Super Typhoon In-fa. The box runs 17.5 N to 28.3 N, 138.1 E to 149.9 E (storm centre plus or minus 600 km). Taken 2026-10-31; cloud can hide the ground."
+  }
+ },
+ "known_good/wiki-marion-geist.jpg": {
+  "img_id": "img-wiki-marion",
+  "why": "Accepted by JUDGE-13 ('the Indianapolis aerial on Marion'): R3 place portrait, legible.",
+  "source": "app/dev/fixtures/C1.json img/index + blobs.json (r23 live-db snapshot, 2026-10-31)",
+  "row": {
+   "id": "img-wiki-marion",
+   "crop": "place",
+   "credit": "Carol M. Highsmith, via Wikimedia Commons",
+   "license": "Public domain",
+   "src_url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Geist_Reservoir_and_surrounding_housing_developments_in_Indianapolis_suburb_of_Fishers,_Indiana.jpg",
+   "taken": "2016-09-19",
+   "width": 720,
+   "height": 480,
+   "caption": "Indianapolis: Aerial view of Geist Reservoir and surrounding housing developments in Indianapolis suburb of Fishers, Indiana (picture from the Wikipedia article, hosted on Wikimedia Commons)."
+  }
+ },
+ "known_good/usgs-shakemap-m6.jpg": {
+  "img_id": "img-shake-quake-a82701c669d4",
+  "why": "USGS ShakeMap of the M6.0 quake: R1, drawn map of the event.",
+  "source": "app/dev/fixtures/C1.json img/index + blobs.json (r23 live-db snapshot, 2026-10-31)",
+  "row": {
+   "id": "img-shake-quake-a82701c669d4",
+   "crop": "event",
+   "credit": "USGS Earthquake Hazards Program, ShakeMap",
+   "license": "Public domain (US government work, USGS)",
+   "src_url": "https://earthquake.usgs.gov/product/shakemap/us7000tuku/us/1793486047103/download/intensity.jpg",
+   "taken": "2026-10-31",
+   "width": 595,
+   "height": 720,
+   "caption": "USGS ShakeMap of estimated shaking intensity for M6.0 earthquake 36 miles SSE of Shima, Japan."
+  }
+ }
+}

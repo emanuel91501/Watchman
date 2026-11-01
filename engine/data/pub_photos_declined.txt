@@ -1,0 +1,3 @@
+# Publishers whose preview pictures Watchman never uses (feed pictures or og:image). One registrable domain per line; '#' comments.
+# Seeded 2026-11-01 (M2) with the publisher the engine already refuses to read: NPR's feed blocks automated reading.
+npr.org
